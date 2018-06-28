@@ -1,9 +1,12 @@
-# LibreHardwareMonitor
-[![Build status](https://ci.appveyor.com/api/projects/status/yk60la8da96kfjos?svg=true)](https://ci.appveyor.com/project/LibreHardwareMonitor/librehardwaremonitor)
+# OpenHardwareMonitor + InfluxDB
 
-Libre Hardware Monitor, home of the fork of Open Hardware Monitor
+This is a fork of Libre Hardware Monitor which is a fork of Open Hardware Monitor, where you can connect to an InfluxDB instance and send sensor values to it.
 
-We will happily accept pull requests.
+All sensors are sent as `ohm.Sensor` measurement with tags:
 
-
-You can download the latest builds [here](https://ci.appveyor.com/project/LibreHardwareMonitor/librehardwaremonitor/build/artifacts).
+* ohm.Name
+* ohm.Identifier
+* ohm.Type
+* ohm.Hardware.Name
+* ohm.Hardware.Identifier
+* ohm.Hardware.Type
