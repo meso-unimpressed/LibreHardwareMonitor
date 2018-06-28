@@ -10,3 +10,5 @@ All sensors are sent as `ohm.Sensor` measurement with tags:
 * ohm.Hardware.Name
 * ohm.Hardware.Identifier
 * ohm.Hardware.Type
+
+You can specify your own tags and have some minimal mustache templating too. You can also specify a simple json file as a key-value pair for the mustache templating.
